@@ -1,0 +1,81 @@
+// --------------------------
+// VARIABLES
+// --------------------------
+$maincolor: black;
+$contrastcolor: white;
+
+@mixin white-text-black-bg {
+  color: $contrastcolor;
+  background-color: $maincolor;
+}
+
+@mixin black-test-white-bg {
+  color: $maincolor;
+  background-color: $contrastcolor;
+}
+
+// --------------------------
+// Header
+// --------------------------
+
+nav {
+  @include white-text-black-bg;
+  display: flex;
+  justify-content: flex-start;
+
+  a {
+    @include white-text-black-bg;
+    div {
+      margin: 10px;
+      font-size: large;
+    }
+  }
+}
+
+// --------------------------
+// Form
+// --------------------------
+
+section,
+div {
+  form {
+    input {
+      @include white-text-black-bg;
+      padding: 10px;
+      font-size: 1.1em;
+      margin: 10px;
+
+      &[type="submit"]:hover {
+        @include black-test-white-bg;
+      }
+    }
+  }
+}
+
+// --------------------------
+// button
+// --------------------------
+
+button#delete {
+  @include white-text-black-bg;
+  display: block;
+  margin: auto;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+// --------------------------
+// images
+// --------------------------
+
+img {
+padding: .5rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 90px;
+  object-fit: cover;
+}
+
+body {
+    background: beige;
+}

@@ -1,10 +1,12 @@
+ import myImage from '../Assets/Logo.png'
+
 
 const Header = (props) => {
     return (
-        <Header>
-            <img src="https://i.imgur.com/zXMIjAO.png" />
+        <nav className="nav"> 
+            <img src={myImage} />
             
-        </Header>
+        </nav>
         
     )
 }
