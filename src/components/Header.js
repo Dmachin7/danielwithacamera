@@ -4,7 +4,7 @@
 const Header = (props) => {
     return (
         <nav className="nav"> 
-            <img src={myImage} />
+            <img src={myImage} alt='logo' />
             
         </nav>
         
