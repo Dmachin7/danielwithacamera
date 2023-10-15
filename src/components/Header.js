@@ -1,7 +1,11 @@
 
 const Header = (props) => {
     return (
-        <h1>This is the Header</h1>
+        <Header>
+            <img src="https://i.imgur.com/zXMIjAO.png" />
+            
+        </Header>
+        
     )
 }
 
